@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dicee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Dice Game</h1>
+
+      <div class="dice">
+        <p>Player 1</p>
+        <img class="img1" src="./images/dice6.png">
+      </div>
+
+      <div class="dice">
+        <p>Player 2</p>
+        <img class="img2" src="./images/dice6.png">
+      </div>
+
+      <div class="buttonContainer">
+        <button onclick="restartGame()">Restart</button>
+        <button onclick="nextRound()">Play</button>
+      </div>
+
+      <!-- Records -->
+      <div class="records">
+        <h2>Round Records</h2>
+        <table id="roundRecordsTable">
+          <thead>
+            <tr>
+              <th>Round</th>
+              <th>Player 1</th>
+              <th>Player 2</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Records will go here -->
+          </tbody>
+        </table>
+      </div>
+  
+
+    </div>
+     
+    <script src="/script.js"></script>
+  </body>
+
+  <footer>
+   Eric Hsu
+  </footer>
+</html>
